@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone - Tienda Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-top">
+            <div class="header-left">
+                <img src="imagenes/Imagen de logo.jpg" >
+                <span class="empresa-nombre"> Game Zone Store</span>
+            </div>
+            <div class="header-right" id="cart-icon-container">
+                <i id="cart-icon" class="fas fa-shopping-cart"></i>
+                <span id="cart-count-badge">0</span>
+            </div>
+        </div>
+        <div class="header-center">
+            <h1>Tu Destino Para Los Mejores Juegos</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <aside class="carrito-container hidden" id="carrito-izquierda">
+            <h2>Tu Carrito (<span id="contador-carrito">0</span>)</h2>
+            <ul id="lista-carrito" class="lista-carrito">
+                <li>El carrito está vacío.</li>
+            </ul>
+            <div class="totales">
+                <p>Subtotal: <span id="subtotal">$0.00</span></p>
+                <p>Impuestos (10%): <span id="impuestos">$0.00</span></p>
+                <p class="total-final">Total: <span id="total-final">$0.00</span></p>
+            </div>
+            <div class="botones-carrito">
+                <button class="btn-vaciar" id="btn-vaciar">Vaciar Carrito</button>
+                <button class="btn-comprar">Finalizar Compra</button>
+            </div>
+        </aside>
+
+        <section class="catalogo" id="catalogo">
+            <div class="producto" data-id="1" data-precio="59.99" data-stock="5"> 
+                <img src="imagen del juego 1.jpg" alt="Carátula Cyber punk">
+                <h3>Cyber Punk 2077</h3>
+                <p>Aventura futurista de mundo abierto.</p>
+                <span class="precio">$59.99</span>
+                <span class="stock-info">Stock: 5</span>
+                <button class="btn-agregar">Añadir al Carrito</button>
+            </div>
+
+            <div class="producto" data-id="2" data-precio="49.99" data-stock="12">
+                <img src="imagen del jugo 2.jpg" alt="Carátula El Reino Perdido">
+                <h3>El Reino Perdido</h3>
+                <p>Juego de rol (RPG) con magia y dragones.</p>
+                <span class="precio">$49.99</span>
+                <span class="stock-info">Stock: 12</span>
+                <button class="btn-agregar">Añadir al Carrito</button>
+            </div>
+            
+            <div class="producto" data-id="3" data-precio="69.99" data-stock="8">
+                <img src="imagen del  juego 3.jpg" alt="Carátula de Fútbol">
+                <h3>EA SPORTS FC 24</h3>
+                <p>Simulador deportivo de fútbol realista.</p>
+                <span class="precio">$69.99</span>
+                <span class="stock-info">Stock: 8</span>
+                <button class="btn-agregar">Añadir al Carrito</button>
+            </div>
+            
+            <div class="producto" data-id="4" data-precio="29.99" data-stock="20">
+                <img src="imagen del juego 4.jpg" alt="Carátula de Puzzle">
+                <h3>Cubo Mágico</h3>
+                <p>Aventura de lógica y puzzles complejos.</p>
+                <span class="precio">$29.99</span>
+                <span class="stock-info">Stock: 20</span>
+                <button class="btn-agregar">Añadir al Carrito</button>
+            </div>
+
+            <div class="producto" data-id="5" data-precio="39.99" data-stock="7">
+                <img src="imagen del juego 5.jpg" alt="Carátula de Carreras">
+                <h3>Furious Track</h3>
+                <p>Juego de carreras arcade de alta velocidad.</p>
+                <span class="precio">$39.99</span>
+                <span class="stock-info">Stock: 7</span>
+                <button class="btn-agregar">Añadir al Carrito</button>
+            </div>
+
+            <div class="producto" data-id="6" data-precio="54.99" data-stock="15">
+                <img src="imagen del jeugo 6.jpg" alt="Carátula de Guerra">
+                <h3>Battlefront Alpha</h3>
+                <p>Shooter táctico multijugador militar.</p>
+                <span class="precio">$54.99</span>
+                <span class="stock-info">Stock: 15</span>
+                <button class="btn-agregar">Añadir al Carrito</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
